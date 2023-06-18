@@ -1,11 +1,12 @@
 Flight Api Usage:
 
+- import `Flight Test Api.postman_collection.json` into `Postman` to test after the app is up and running
 - to register and login user, you need to set headers `Content-Type: application/json, XRequestedWith: XMLHttpRequest`
 - register user by posting something like this to `http://flight-api.local/api/auth/signup`:
 ```
 {
-	"name": "Kittyhawk",
-	"email": "kittyhawk@gmail.com",
+	"name": "Company Name",
+	"email": "user@example.com",
 	"password": "secret",
 	"password_confirmation": "secret"
 }
@@ -13,7 +14,7 @@ Flight Api Usage:
 - login user to get token
 ```
 {
-	"email": "kittyhawk@gmail.com",
+	"email": "user@example.com",
 	"password": "secret",
 	"remember_me": true
 }
